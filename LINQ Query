@@ -1,0 +1,67 @@
+ LINQ Query in UI path
+
+Mostly used in C# ,VB.Net
+
+
+ Two types 
+ 1. C#
+ 2.VB
+
+The requirement for writing the LINQ Query
+To write the LINQ Query, we need the following three things:
+
+ *Data Source (in-memory objects, SQL, XML)
+ *Query
+ *Execution of the Query
+
+Each Query is a combination of three things; they are:
+ *Initialization(to work with a particular data source)
+ *Condition(where, filter, sorting condition)
+ *Selection (single selection, group selection or joining)
+
+syntex
+from <variable> in <collection>  
+< where, joining, grouping, operators, etc.> <lambda expression>  
+<select or groupBy operator> <format the results>  
+
+
+
+                                                where 
+Filter Data table By using one coloumn 
+  DT_Output = (
+from row in dt_excel
+where row("Name").ToString="mobile"
+select row
+).CopyToDataTable
+
+
+
+                                              Group BY 
+
+
+ Remove duplicate rows by comparing 2 coloumns 
+
+   DT_output = (
+From row In dt_Excel
+Group row By a= row("BAN ID").ToString, b= row("Complaint ID").ToString Into grp= Group
+Select grp.Last
+	).CopyToDataTable
+ 
+ Get Only Duplicate rows 
+  
+    DT_output = (
+From row In dt_Excel
+Group row By a= row("BAN ID").ToString, b= row("Complaint ID").ToString Into grp= Group
+where grp.Count>1
+Select grp.ToList
+	).SelectMany(Function(x)x).CopyToDataTable
+
+
+  
+
+
+
+
+     
+
+
