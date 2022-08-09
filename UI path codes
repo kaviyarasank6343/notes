@@ -10,5 +10,12 @@ string to date formate
  
   to get date only date by using the whole date 
    day = Date.ParseExact("09.08.2022", “dd.MM.yyyy”, System.Globalization.CultureInfo.InvariantCulture).Day
+   
+   convert str to date 
+   
+   DateTime dt = DateTime.ParseExact(dateString, "yyyyMMdd", 
+                                  CultureInfo.InvariantCulture); 
+   convert date to str                                 
+  string A = dt.ToString(dd/MM/yyyy)                                
 
 
