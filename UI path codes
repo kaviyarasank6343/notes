@@ -1,0 +1,5 @@
+
+get day of week by using date 
+DateTime.Parse(“08/09/2022”).ToString(“dddd”)
+
+
