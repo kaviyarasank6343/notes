@@ -1,5 +1,14 @@
 
 get day of week by using date 
-DateTime.Parse(“08/09/2022”).ToString(“dddd”)
+DateTime.Parse(“08/09/2022”).ToString(“dddd”) // MM/dd/yyyy
+
+
+string to date formate 
+ date = Datetime.ParseExact(input,“MM/dd/yyyy”,System.Globalization.CultureInfo.InvariantCulture)
+ 
+ 
+ 
+  to get date only date by using the whole date 
+   day = Date.ParseExact("09.08.2022", “dd.MM.yyyy”, System.Globalization.CultureInfo.InvariantCulture).Day
 
 
