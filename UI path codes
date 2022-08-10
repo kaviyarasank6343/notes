@@ -19,3 +19,13 @@ string to date formate
   string A = dt.ToString(dd/MM/yyyy)                                
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+                                                   Data Table
+
+ -----------------------------------------------Merge Data Table (Addwithkey)-----------------------------------------
+ 
+ 
+  1. assign 1st datable --> DT1.PrimaryKey = New DataColoumn() {dt1.coloumns("ID")}
+  2. assign 2nd  datable --> DT2.PrimaryKey = New DataColoumn() {dt2.coloumns("ID")}
+  3. Use invoke method --> Target object = DT1 , method = Merge , add arrgument DT2, 
+  DUplicate will be romoved by merge data table 
+  
