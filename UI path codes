@@ -3,7 +3,7 @@ get day of week by using date
 DateTime.Parse(“08/09/2022”).ToString(“dddd”) // MM/dd/yyyy
 
 
-string to date formate 
+         string to date formate 
  date = Datetime.ParseExact(input,“MM/dd/yyyy”,System.Globalization.CultureInfo.InvariantCulture)
  
  
@@ -15,8 +15,11 @@ string to date formate
    
    DateTime dt = DateTime.ParseExact(dateString, "yyyyMMdd", 
                                   CultureInfo.InvariantCulture); 
-   convert date to str                                 
-  string A = dt.ToString(dd/MM/yyyy)                                
+              convert date to str                                 
+  string A = dt.ToString(dd/MM/yyyy)      
+  
+   
+   
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
                                                    Data Table
