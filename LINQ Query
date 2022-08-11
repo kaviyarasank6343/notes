@@ -55,6 +55,20 @@ Group row By a= row("BAN ID").ToString, b= row("Complaint ID").ToString Into grp
 where grp.Count>1
 Select grp.ToList
 	).SelectMany(Function(x)x).CopyToDataTable
+	
+	
+	----------------------------------------- Cast ------------------------------
+	 To check each coloumn contain value in a row . 
+	
+	dt_output = 
+	From row in dt_excel 
+	from col in dt_excel.Coloumns.Cast (of DataColoumn)
+	where row(col).ToString.IsNullorEmpty
+	select row 
+	).CopyToDataTable
+	
+	
+	------------------------------------------------------------------------------
 
 
   
