@@ -1,4 +1,40 @@
-                             -------------------- Date Convertion --------------------------------------------------------------------------
+   
+   --------------------------------- Triggers Scope -----------------------------------------
+   
+      to get the value of the attribute in trigger scope
+      
+      String = args.EvenrInfo.AttributeEventInfo.Value.ToString
+      
+      Boolean = cBool(args.EvenrInfo.AttributeEventInfo.Value) ---> Checkbox clicked or not 
+      
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   -------------------- Date Convertion --------------------------------------------------------------------------
 get day of week by using date 
 DateTime.Parse(“08/09/2022”).ToString(“dddd”) // MM/dd/yyyy
 
