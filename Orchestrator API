@@ -14,5 +14,12 @@
 	"StringValue": "Asset Value"
 }
  
- 
+        Get Asset value 
+	
+  End point = /odata/Assets?$filter=Name eq 'Asset Name'
+  
+   Get all Asset Value 
+   
+   End Point  = /odata/Assets
+  
    
