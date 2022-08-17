@@ -2,5 +2,17 @@
   1. get Release key 
   2. Get Robot ID 
   3. Start the job    using push 
+  
+         Create and Get Asset 
+         
+    1.      End Point = {{cloudUrl}}/{{cloudOrg}}/{{cloudTenant}}/odata/Assets
+    2 .      Raw Body = 
+                     {
+	"Name": "AssetName",
+	"ValueScope": "Global",
+	"ValueType": "Text",
+	"StringValue": "Asset Value"
+}
+ 
  
    
