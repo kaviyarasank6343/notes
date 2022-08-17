@@ -21,5 +21,11 @@
    Get all Asset Value 
    
    End Point  = /odata/Assets
-  
+    
+    
+                                       Queue 
+				       
+    Get Queue Name , Key , ID 
+    
+     End Point =  "/odata/QueueDefinitions"
    
