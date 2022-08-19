@@ -1,9 +1,8 @@
-  Run Process Using Api 
-  1. get Release key 
-  2. Get Robot ID 
-  3. Start the job    using push 
   
-         Create and Get Asset 
+  
+  -------------------------------------Asset----------------------------------------------------------
+  
+        ---------------------- Create Asset 
          
     1.      End Point = {{cloudUrl}}/{{cloudOrg}}/{{cloudTenant}}/odata/Assets
     2 .      Raw Body = 
@@ -13,8 +12,9 @@
 	"ValueType": "Text",
 	"StringValue": "Asset Value"
 }
+2. Raw body as  string = "{Name: 'Email_value',ValueScope: 'Global',ValueType: 'Text',StringValue: 'kaviyarasan.k@iopex.com'}"
  
-        Get Asset value 
+      --------------------  Get Asset value 
 	
   End point = /odata/Assets?$filter=Name eq 'Asset Name'
   
@@ -23,7 +23,15 @@
    End Point  = /odata/Assets
    
    ------------------------------------------Run Jobs -----------------------------------------
+                               Run Process Using Api 
+  1. get Release key  using get
+  2. Start the job    using push
+               
                                      Method =    POST
+     For run Job need to get Realease Key 
+         Realease key = "odata/Realease"
+	 Give Folder name 
+     
    End Point = "odata/Jobs/UiPath.Server.Configuration.OData.StartJobs"
    
    Bode row = {
@@ -45,16 +53,16 @@
      End Point =  "/odata/QueueDefinitions"
      
      
-                                       ----- Add Queue Items ----
+           --------------------------------------- Add Queue Items
       
-                                       Using Orchestrator Api == POST 
+                                       Using Orchestrator http request == POST 
      Give required  Folder path 				       
       
     End Point = "/odata/Queues/UiPathODataSvc.AddQueueItem"
     
     body raw = "{'itemData': {'Priority': 'Normal','Name': 'Test_Queue','SpecificContent': {'Name@odata.type': '#String','Name': 'Kaviyarasan.k','Age': 22},'Reference': 'Test_Queue'}}"
  
-                                  -----------------Using HTTP REquest ----------------
+             -----------------------------------------Using HTTP REquest 
 				  
    End Point = https://account.uipath.com/oauth/token 
    
