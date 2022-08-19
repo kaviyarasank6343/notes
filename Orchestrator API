@@ -76,6 +76,12 @@
                 }
 		output = token id 
 		
+----------------------------------- Edit Queue Items 
+       1.Get Queue ID
+       
+       
+       End point = "odata/Queues(76832642)"
+       In Body Give the changes you to need to change 
  
  
  
