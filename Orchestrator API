@@ -21,6 +21,21 @@
    Get all Asset Value 
    
    End Point  = /odata/Assets
+   
+   ------------------------------------------Run Jobs -----------------------------------------
+                                     Method =    POST
+   End Point = "odata/Jobs/UiPath.Server.Configuration.OData.StartJobs"
+   
+   Bode row = {
+  "startInfo": {
+    "ReleaseKey": "7f24d7e2-9f3b-4dad-bb58-a678b610603d",
+    "Strategy": "ModernJobsCount",
+     "JobsCount": 1,
+    "InputArguments": ""
+  }
+}
+
+
     
     ------------------------------------------- Queue-------------------------------------------- 
 				       To Get queue Items 
