@@ -77,9 +77,13 @@
 		output = token id 
 		
 ----------------------------------- Edit Queue Items 
-       1.Get Queue ID
+      1.Get Queue ID
+   to get queue  details 
+  end point = 'odata/QueueItems'
+
        
        
+       2. To get queue value 
        End point = "odata/Queues(76832642)"
        In Body Give the changes you to need to change 
  
