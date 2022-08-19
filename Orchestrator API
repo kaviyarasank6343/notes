@@ -38,4 +38,21 @@
     End Point = "/odata/Queues/UiPathODataSvc.AddQueueItem"
     
     body raw = "{'itemData': {'Priority': 'Normal','Name': 'Test_Queue','SpecificContent': {'Name@odata.type': '#String','Name': 'Kaviyarasan.k','Age': 22},'Reference': 'Test_Queue'}}"
+ 
+                                  -----------------Using HTTP REquest ----------------
+				  
+   End Point = https://account.uipath.com/oauth/token 
    
+   Add header   ContantType = Application/JSON
+   Add header    X-UIPATH-TenantName = DefaultTenant
+   
+   Body Raw = { 
+               "grand_type" : "refresh_token"
+	       "client_id" : "8DEv1AMNXczW3y4U15LL3jYf62jK93n5"
+	       "refresh_token" : "CI3KEsA63wHNmrcp7HgiiTbDAsKwYoNLUQpYM8M2MJPDr"
+                }
+		output = token id 
+		
+ 
+ 
+ 
