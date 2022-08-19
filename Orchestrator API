@@ -22,10 +22,20 @@
    
    End Point  = /odata/Assets
     
-    
-                                       Queue 
+    ------------------------------------------- Queue-------------------------------------------- 
+				       To Get queue Items 
 				       
-    Get Queue Name , Key , ID 
+                                 Get Queue Name , Key , ID 
     
      End Point =  "/odata/QueueDefinitions"
+     
+     
+                                       ----- Add Queue Items ----
+      
+                                       Using Orchestrator Api == POST 
+     Give required  Folder path 				       
+      
+    End Point = "/odata/Queues/UiPathODataSvc.AddQueueItem"
+    
+    body raw = "{'itemData': {'Priority': 'Normal','Name': 'Test_Queue','SpecificContent': {'Name@odata.type': '#String','Name': 'Kaviyarasan.k','Age': 22},'Reference': 'Test_Queue'}}"
    
