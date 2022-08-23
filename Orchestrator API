@@ -143,7 +143,14 @@ Data: [{"name":"kavi3","datee":"19/08/2022","Status":"Success","Previious_date":
  3.  json payload -----.> to for orchestrator http request - json payload - method -post 
       J_payload = "{""itemData"": {""Priority"": ""Normal"",""Name"": ""Test_Queue"",""SpecificContent"": { ""Data"":"""+Json_se_input+"""},""Reference"": ""Test_Queue""}}"
     
-
+ 4. End Point = "/odata/Queues/UiPathODataSvc.AddQueueItem"
+     
+     push  the value to tha queue 
+     
+      clear the copy_dt
+      
+      
+-------------------------------------------------------------------------------------------------------------------------------------------------------------      
 
 
  
