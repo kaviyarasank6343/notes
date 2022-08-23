@@ -88,6 +88,15 @@
        In Body Give the changes you to need to change 
        
 ----------------------------------------------------------- Add Queue Items  API using data table input -----------------------------------------------
+Directly from dattable to orchestrator using API
+
+
+LIke this format in orchestrator 
+Specific Data: Object
+name: kavi
+datee: 18/08/2022
+Status: Success
+Previious_date: 18/08/2022
 
     need to clone the  input_dt to copy dt
     
@@ -111,6 +120,33 @@
     
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 
+ -------------------------------------------------Add queue items json inside the specific content ---------------------------------------------
+ 
+Like this format in orchestrator 
+
+Specific Data: Object
+Data: [{"name":"kavi3","datee":"19/08/2022","Status":"Success","Previious_date":"18/08/2022"}]
+
+
+    Need to clone the  input_dt to copy dt
+    
+    
+    Need to get a row by row in data table 
+    
+  --------- inside the for each loop for data table 
+  1. Need to  convert dt into json 
+    Json_se_input =  JsonConvert.SerializeObject(Copy_dt)
+  
+  2. Replace all the " into \" -------->  Inoder to get the json value as a string 
+     Json_se_input  = Json_se_input.Replace("""","\""")
+     
+ 3.  json payload -----.> to for orchestrator http request - json payload - method -post 
+      J_payload = "{""itemData"": {""Priority"": ""Normal"",""Name"": ""Test_Queue"",""SpecificContent"": { ""Data"":"""+Json_se_input+"""},""Reference"": ""Test_Queue""}}"
+    
+
+
+
+ 
  
  
  
