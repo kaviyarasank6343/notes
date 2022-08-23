@@ -87,15 +87,29 @@
        End point = "odata/Queues(76832642)"
        In Body Give the changes you to need to change 
        
------------------------------------------------------------ Add Queue Items using data table input -----------------------------------------------
+----------------------------------------------------------- Add Queue Items  API using data table input -----------------------------------------------
+
+    need to clone the  input_dt to copy dt
+    
+    
     need to get a row by row in data table 
+    
   --------- inside the for each loop for data table 
   1. need to  convert dt into json 
     Json_se_input =  JsonConvert.SerializeObject(Copy_dt)
+    
      
    2. json payload -----.> to for orchestrator http request - json payload - method -post    \\ use substring to remove [] in the json format 
         json_payload= "{'itemData': {'Priority': 'Normal','Name': 'Test_Queue','SpecificContent': "+Json_se_input.Substring(1,Json_se_input.Length-2)+",'Reference': 'Test_Queue'}}"
+	
+	
     3. End Point = "/odata/Queues/UiPathODataSvc.AddQueueItem"
+     
+     push  the value to tha queue 
+     
+      clear the copy_dt
+    
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 
  
  
