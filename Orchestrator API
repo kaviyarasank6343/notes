@@ -43,7 +43,12 @@
   }
 }
 
--------------------------------------------Run 
+-------------------------------------------Run Jobs with particular machine -----------
+Assign a machine during the job trigger susing Orchestrator API
+
+ End Point = "odata/Jobs/UiPath.Server.Configuration.OData.StartJobs"
+ 
+j Payload = "{""startInfo"": { ""ReleaseKey"": ""7f24d7e2-9f3b-4dad-bb58-a678b610603d"",""Strategy"": ""ModernJobsCount"",""MachineRobots"": [{""MachineId"": 2262492,""MachineName"": ""CHNIOPEXD2186""}],""JobsCount"": 1, ""InputArguments"": """"}}"
 
 
     
