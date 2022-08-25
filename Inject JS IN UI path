@@ -15,7 +15,8 @@ Inject JS
  3.output 
    
    
-   Example code of js in Automation anyware website :
+   Example code of js in Automation anyware website : (type the details in the website and click submit button )
+   
    
  function(element,Json_str){
 
