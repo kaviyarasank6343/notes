@@ -1,0 +1,47 @@
+Inject JS 
+
+   * Used to write javascript code in ui path 
+   *It very fast and high accuracy than compared to uipath activity 
+   * it is aplicable  when the id is static 
+   * It also return value 
+   
+   ex; 
+   1.to write text in text box without using type into activity 
+   2.click activity 
+   
+ ------ properties 
+ 1.input parameteres 
+ 2. source code (JS script code path or code )
+ 3.output 
+   
+   
+   Example code of js in Automation anyware website :
+   
+ function(element,Json_str){
+
+ const Json_Obj = JSON.parse(Json_str);
+
+for( i=0; i< Json_Obj.length; i++){
+
+  document.getElementById("customerName").value=(Json_Obj[i]["Company Name"]);
+	document.getElementById("customerID").value=(Json_Obj[i]["Customer ID"]);
+	document.getElementById("primaryContact").value=(Json_Obj[i]["Primary Contact"]);
+	document.getElementById("street").value=(Json_Obj[i]["Street Address"]);
+	document.getElementById("city").value=(Json_Obj[i]["City"]);
+	document.getElementById("state").value=(Json_Obj[i]["State"]);
+	document.getElementById("zip").value=(Json_Obj[i]["Zip"]);
+	document.getElementById("email").value=(Json_Obj[i]["Email Address"]);
+
+   if((Json_Obj[i]["Offers Discounts"])=="YES"){
+	document.getElementById("activeDiscountYes").checked = true;
+     }else if((Json_Obj[i]["Offers Discounts"])=="NO"){
+	document.getElementById("activeDiscountNo").checked = true;
+     }
+     
+      if((Json_Obj[i]["Non-Disclosure On File"])=="YES"){
+	document.getElementById("NDA").checked = true;  
+       }
+     submit_button.click();
+}
+}
+   
