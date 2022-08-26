@@ -7,6 +7,15 @@
       
       Boolean = cBool(args.EvenrInfo.AttributeEventInfo.Value) ---> Checkbox clicked or not 
       
+      
+      ----------------------------------------------- Data type convertion ------------
+        
+        
+        convert othere datatype to string=  .Tostring
+        
+        convert string to int = Cint()
+        convert string to double = Cdbl()
+      
    
    
    
