@@ -45,4 +45,11 @@ for( i=0; i< Json_Obj.length; i++){
      submit_button.click();
 }
 }
+
+
+
+------------------------------------------ js code to get the child id 
+    document.getElementById("continue").childNodes[0].childNodes[0].click
+
+
    
