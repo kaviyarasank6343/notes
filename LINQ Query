@@ -25,6 +25,10 @@ from <variable> in <collection>
 <select or groupBy operator> <format the results>  
 
 
+------------------------ add data row in query 
+       		select output_dt.Rows.Add(value1, value2,value3)
+
+
 
                                                 where 
 Filter Data table By using one coloumn 
