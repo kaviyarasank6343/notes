@@ -69,7 +69,33 @@ Select grp.ToList
 	
 	
 	------------------------------------------------------------------------------
+	----------------ifcondition in LINQ Query ------------------------------
+	Syntex:
+	 If ((condition),Then statement , else statement )
+	
+	
+	
+	example : For int array 
+	
+	output_arr= (from N in Input_arr 
+	              let a= if(N=2, N+5,N+10)
+		      slect A 
+		      ).ToArray
 
+	Example 2 : Using Datatable  > To find name Start with "A"
+	    	Output_dt =( from row in input_dt
+		             let A= ((row("Name").ToString.Trim.StartWith("A"),"Yes","NO")
+			     select output_dt.Rows.Add(row("Name"),A)
+			   ).CopyToDataTable
+			   
+       Example 3 : Using datatable > to find name start with "A" > incase of no rows  start with "A" we need to  handle error  
+       
+       		Out_dt =  if( out_dt.Rows.Count>0,
+		           ( from row in input_dt
+			    where row("Name").ToString ="kavi"
+		             let A= ((row("Name").ToString.Trim.StartWith("A"),"Yes","NO")
+			     select output_dt.Rows.Add(row("Name"),A)
+			   ).CopyToDataTable,out_dt)
 
   
 
