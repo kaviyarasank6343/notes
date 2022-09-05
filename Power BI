@@ -1,5 +1,26 @@
-Hello 
 
-POWER BI 
+POWER BI
+
+How to export data from power bi detop/powerbi.com to excel or csv 
+
+
+
+1. export data from power bi desktop 
+     it has a option of export a * Table , grap , chart 
+     output = CSV file 
+     
+ 2. Export data from power bi.com to excel/csv     
+      * has a option of  export 
+      * which data we want to export 
+      File Type 
+        Excel 
+        CSV
+      
+        1. Summarized data
+             *export data which only show in chart 
+             
+        2.underlying data 
+             * Export all the data which not in chart as well 
+             
 
 
