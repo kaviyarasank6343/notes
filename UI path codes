@@ -1,3 +1,9 @@
+------------------------------Sting 
+       Replace string values 
+       
+       str1 = str.Replace(","c,"->1,") + "->1"
+   
+   
    
                                           Data Table
 
