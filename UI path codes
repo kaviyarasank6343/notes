@@ -1,3 +1,10 @@
+
+
+ Convert Password from SecureString to String Datatype
+Use Assign Activity
+
+password_String = new System.Net.NetworkCredential(string.Empty, Password).Password
+
 ------------------------------Sting 
        Replace string values 
        
