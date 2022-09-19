@@ -8,13 +8,20 @@ Use Assign Activity
 
 password_String = new System.Net.NetworkCredential(string.Empty, Password).Password
 
-------------------------------Sting 
+-----------------------------------------------Sting ---------------------------------------------------------------------------------------
        Replace string values 
        
        str1 = str.Replace(","c,"->1,") + "->1"
+       
+       
+       
+       ------ how to check string null or empty or whitespace  
+       
+       (Not String.IsNullOrEmpty(strEnvURL) And Not String.IsNullOrWhiteSpace(strEnvURL)) AndAlso
+(Not String.IsNullOrEmpty(strEnvUserName) And Not String.IsNullOrWhiteSpace(strEnvUserName))
    
    
-   
+   -------------------------------------------------------------------------------------------------------------------------------------------------
                                           Data Table
 
  -----------------------------------------------Merge Data Table (Addwithkey)-----------------------------------------
