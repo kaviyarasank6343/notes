@@ -81,6 +81,9 @@ DateTime.Parse(“08/09/2022”).ToString(“dddd”) // MM/dd/yyyy
               convert date to str                                 
   string A = dt.ToString(dd/MM/yyyy)      
   
+    To get a 1st day of current month 
+     datetime date_var= new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)
+  
    
    
 
