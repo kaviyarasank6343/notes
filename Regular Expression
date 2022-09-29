@@ -1,6 +1,27 @@
+Regular Expression 
+
+it is used for pattern matching or string matching 
+
+
 
 IT was invented by kleene
 
 
 ab*c      = ac  | abc | abbc | abbc  .....
 *------ Zero or more 
+
+
+[abc] ------- a,b or c
+[^abc]-------- Any character Except a,b,c .
+[A-Z]---- A to Z
+[a-b]---- a to z
+[0-9]------ 0 to 9 
+
+
+-------------- Quantifiers ---- 
+[  ]? ------ occurs o or 1 times
+[  ]+ -------- occurs 1 or more times
+[  ]* ---------- occurs 0 or more times 
+[  ]{n}--------- occurs n times 
+[  ]{n,}-------- occurs n or more times 
+[  ]{y,z}------- ocurrs atleast y times l but less than z times 
