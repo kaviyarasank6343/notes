@@ -1,1 +1,6 @@
 
+IT was invented by kleene
+
+
+ab*c      = ac  | abc | abbc | abbc  .....
+*------ Zero or more 
