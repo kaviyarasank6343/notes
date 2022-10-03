@@ -42,4 +42,12 @@ ab*c      = ac  | abc | abbc | abbc  .....
 Examples 
 1. Mobile number Start with 8 or 9 and total contain 10 digits 
     [8 9][0-9]{9}
+
+2. First character Upper case , contains lower case alphabets , only one digit alowed in between 
+
+   [A-Z][a-z]* [0-9][a-z]*
+   
+3. Email ID 
+
+  [A-Z a-z 0-9 _ \- \.]+ [@] [a-z]+ [\.][a-z]{2,3}
     
