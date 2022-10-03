@@ -25,3 +25,14 @@ ab*c      = ac  | abc | abbc | abbc  .....
 [  ]{n}--------- occurs n times 
 [  ]{n,}-------- occurs n or more times 
 [  ]{y,z}------- ocurrs atleast y times l but less than z times 
+
+
+------------ Meta  Characters
+
+\ tell the comp the following characters as search character for '+' ','
+
+
+\d --------------- [0-9]
+\D ---------------[^0-9]
+\w --------------- [a-z A-Z 0-9]
+\W ----------------[^\w]
