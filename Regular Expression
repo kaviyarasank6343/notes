@@ -36,3 +36,10 @@ ab*c      = ac  | abc | abbc | abbc  .....
 \D ---------------[^0-9]
 \w --------------- [a-z A-Z 0-9]
 \W ----------------[^\w]
+
+
+
+Examples 
+1. Mobile number Start with 8 or 9 and total contain 10 digits 
+    [8 9][0-9]{9}
+    
