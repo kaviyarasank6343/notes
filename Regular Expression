@@ -35,7 +35,11 @@ ab*c      = ac  | abc | abbc | abbc  .....
 \d --------------- [0-9]
 \D ---------------[^0-9]
 \w --------------- [a-z A-Z 0-9]
-\W ----------------[^\w]
+\W ----------------[^\w]t
+
+Look Behind --- (?<= Value).*
+Look ahead ----- .*(?=Value)
+Expression Likee like------  (?<=Value1).*(?= Value2)  --- it able to get the text b/w value1 and value2
 
 
 
