@@ -23,6 +23,14 @@ password_String = new System.Net.NetworkCredential(string.Empty, Password).Passw
    
    -------------------------------------------------------------------------------------------------------------------------------------------------
                                           Data Table
+                                          
+                                          
+                                          
+  --------- Data table headers rearrange 
+   assign --  
+   datatable = datatable1.DefaultView.ToTable(false, "column2", "column1","column3" ) -------- if we give true it remove the duplicate rows 
+   
+   
 
  -----------------------------------------------Merge Data Table (Addwithkey)-----------------------------------------
  
