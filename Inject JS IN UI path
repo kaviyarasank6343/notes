@@ -15,6 +15,15 @@ Inject JS
  3.output 
    
    
+   
+   
+   
+   ----------Get element by name
+   let num = document.getElementsByName("animal").length;
+   
+   
+   -------------------------------------------------------------------------------------------------------------------
+   
    Example code of js in Automation anyware website : (type the details in the website and click submit button )
    
    
