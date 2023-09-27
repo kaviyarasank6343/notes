@@ -1,0 +1,11 @@
+1.need to creae check list for good code 
+
+2.what are the best practice you use 
+    * Put comment on the code |usage of code |funtionality
+    *Credential should be stored in the Assets orch  
+      * avoid getting remote data 
+    * create multiple subtasks XAMLS (code reuse | Split functionality  ) 
+    * build samaller individual bots by functionality ()
+    
+3.String commands     
+    Split | get count | to lower case \upper |
